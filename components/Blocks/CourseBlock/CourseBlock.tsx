@@ -9,12 +9,26 @@ import LanguageIcon from "./lang.svg";
 import LessonsIcon from "./lessons.svg";
 import TimeIcon from "./time.svg";
 import Arrow from "../../ReLink/arrow2.svg";
-
 import React, { useState } from "react";
 import cn from "classnames";
 
 export const CourseBlock= (courseItem:CoursesBlockTypes) =>{
-  const course = courseItem.courseItem;
+  const course = courseItem.courseItem ? courseItem.courseItem : {
+    name:"React + Next.js - с нуля. TypeScript, Hooks, SSR и CSS Grid",
+    id:0,
+    img:"https://cdn.coursehunter.net/courses/360x220/react-next-js-s-nulya-typescript-hooks-ssr-i-css-grid.jpg",
+    creator:"udemy",
+    rating:5,
+    duration:"19:42:34",
+    lessons:137,
+    data:"05/07/2021",
+    lang:"Русский",
+    description:{
+      part1:"Полный курс по современному Frontend на React и Next.js. Всё от CSS Grid и TypeScript до React Hooks и SSR. Next.js - готовый к production framework для React - самой популярной JavaScript библиотеки на сегодняшний день. Он позволяет разрабатывать производительные, SEO-friendly сайты с использованием Server Side Rendering (SSR) и статической генерацией страниц. <br/><br/>",
+      part2:"При этом от вас требуется только базовое знание CSS, HTML и JavaScript, так в рамках курса мы не только разберём Next.js, но и React с нуля. При этом мы будем писать не просто какой-то учебный проект, а реальный production сайт, посвящённый рейтингам. <br/><br/>Мы детально разберём:<ul><li> TypeScript</li><li> Настройку окружения и сборку проекта </li><li> Работу в Figma </li><li> React Hooks </li><li> Создание компонентов </li><li> Контекст </li><li> Роутинг NextJS </li><li> Вёрстку на CSS grid</li><li> Как работает Server Side Rendering (SSR) и статическая генерация страниц </li><li> Встроенные компоненты Next.js </li><li> Работу с формами через react-hook-form </li><li> Анимацию с помощью Framer Motion</li><li> Доступность с клавиатуры и работу ScreenReader </li><li> Подготовку приложения к production и работу Docker</li></ul>Каждый модуль содержит как теоретическую часть, так и live-code, где мы в месте будем создавать приложение с нуля. В конце каждого модуля вас ожидает тест, который позволит укрепить ваши знания, а небольшие упражнения - попрактиковаться писать код. <br/><br/>В результате курса вы получите знания и навыки, которые необходимы frontend разработчику на реальных проекта. <br/><br/>"
+    }
+  };
+
   const [buttonDisplay, setButtonDisplay] = useState(true);
   const [valid,setValid] = useState(true);
   const validateEmail = (e:React.FocusEvent<HTMLInputElement>) =>{
