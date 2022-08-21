@@ -1,16 +1,29 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	color:var(--black);
+	background-color: var(--dark-blue);
+	font-family:  'Nunito', sans-serif;  
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+:root{
+	--black:#797D7F;
+	--white:#ffffff;
+	--primary:#1976D2;
+	--dark-blue:#17202A;
+	--light-blue:#1C2833;
+	--red:#E53935;
+	--font-family: 'Nunito', sans-serif;
 }

@@ -1,0 +1,67 @@
+
+
+
+.link{
+  font-weight: 700;
+font-size: 32px;
+color:var(--primary);
+margin: 0;
+display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 25px;
+  grid-template-rows: 32px;
+  align-items: center;
+}
+
+.linkBlock svg{
+  margin-top: 5px; transition: 0.5s;
+
+} 
+.linkBlock:hover a{
+  color:white;
+
+}
+.linkBlock:hover svg{
+  margin-left: 15px;
+  fill: white;
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .link{
+    font-size: 20px;
+    gap: 15px;
+    align-items: start
+  }
+  .linkBlock svg{
+    width: 12px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .link{
+    font-size: 22px;
+    gap: 15px;
+    word-break: break-all;
+
+  }
+  .linkBlock svg{
+    width: 15px;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .link{
+    font-size: 24px;
+    gap: 15px;
+    word-break: break-all;
+    align-items: center
+    
+  }
+  .linkBlock svg{
+    width: 15px;
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .link{
+    word-break: break-all;
+  }
+}

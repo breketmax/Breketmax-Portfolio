@@ -1,0 +1,67 @@
+.up_button{
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  position: fixed;
+  bottom:50px;
+  right: 50px;
+  border-radius: 15px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.up_button svg{
+  transform: rotate(-90deg);
+  fill: var(--white);
+}
+.hide{
+  cursor: default;
+  pointer-events: none;
+}
+.up_button:hover{
+  background-color: #3F8FDF;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .up_button{
+    bottom:10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .up_button svg{
+    width: 15px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .up_button{
+    bottom:20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  .up_button svg{
+    width: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .up_button{
+    bottom:20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  .up_button svg{
+    width: 15px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .up_button{
+    bottom:25px;
+    right: 25px;
+  }
+}

@@ -1,0 +1,184 @@
+.h1{
+  font-weight: 700;
+font-size: 96px;
+line-height: 1;
+color: var(--white);
+margin:0;
+z-index: 1;
+
+}
+.h2{
+  font-weight: 600;
+font-size: 40px;
+color: var(--white);
+margin:0;
+line-height: 1;
+}
+.h3{
+  font-weight: 700;
+font-size: 32px;
+color: var(--white);
+margin:0;
+}
+.h4{
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--white);
+  margin:0;
+}
+.h5{
+  font-weight: 600;
+font-size: 28px;
+color: var(--white);
+margin:0;
+}
+.number_m{
+  font-weight: 700;
+font-size: 96px;
+color:var(--primary);
+margin:0;
+line-height: 80px;
+}
+.number_sm{
+  font-weight: 700;
+  font-size: 64px;
+  color:var(--primary);
+  margin:0;
+  line-height: 1;
+
+}
+.p_m{
+  font-weight: 600;
+font-size: 24px;
+color: var(--black);
+margin:0;
+line-height: 1;
+}
+
+.p_sm{
+  font-weight: 700;
+font-size: 20px;
+color: var(--black);
+margin:0;
+}
+
+.title{
+  font-weight: 600;
+font-size: 20px;
+margin:0;
+display: inline-block;
+
+}
+.title::before{
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: var(--black);
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.white{
+  color:var(--white);
+}
+
+.black{
+  color: var(--black);
+}
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .h1{
+    font-size: 50px;
+  }
+  .h2{
+    font-size: 30px; 
+  }
+  .h3{
+    font-size: 24px;
+  }
+  .h4{
+    font-size: 18px;
+  }
+  .p_m{
+    font-size: 16px;
+  }
+  .p_sm,.title{
+    font-size: 14px;
+  }
+  .number_m{
+    font-size: 50px;
+    line-height: 40px;
+  }
+  .number_sm{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .h1{
+    font-size: 46px;
+  }
+  .h2{
+    font-size: 28px; 
+  }
+  .h3{
+    font-size: 22px;
+  }
+  .h4{
+    font-size: 16px;
+  }
+  .h5{
+    font-size: 20px;
+  }
+  .p_m{
+    font-size: 16px;
+  }
+  .p_sm,.title{
+    font-size: 12px;
+  }
+  .number_m{
+    font-size: 50px;
+    line-height: 40px;
+  }
+  .number_sm{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .h1{
+    font-size: 64px;
+  }
+  .h2{
+    font-size: 32px; 
+  }
+  .h3{
+    font-size: 24px;
+  }
+  .h4{
+    font-size: 18px;
+  }
+  .h5{
+    font-size: 20px;
+  }
+  .p_m{
+    font-size: 18px;
+  }
+  .p_sm{
+    font-size: 14px;
+  }
+  .title{
+    font-size: 16px;
+  }
+  .number_m{
+    font-size: 60px;
+    line-height: 40px;
+  }
+  .number_sm{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {}

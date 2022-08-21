@@ -1,0 +1,43 @@
+.quantity_card{
+  background-color: #566573;
+  padding: 70px 50px;
+  text-align: center;
+  transition: 0.25s;
+}
+.quantity_card h2{
+  margin-top: 30px;
+}
+.quantity_card:hover{
+  background-color: var(--primary);
+  transform: scale(1.1);
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .quantity_card h2{
+    font-size: 24px;
+  }
+  .quantity_card{
+    padding: 50px 20px;
+  }
+  .quantity_card h2{
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .quantity_card h2{
+    font-size: 24px;
+  }
+  .quantity_card{
+    padding: 50px 20px;
+  }
+  .quantity_card h2{
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .quantity_card{
+    padding: 60px 30px;
+  }
+}

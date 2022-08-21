@@ -1,0 +1,64 @@
+.container{
+  padding: 0 13rem;
+}
+.block{
+  padding:10rem 13rem;
+}
+.main_page,.history_page, .courses_list_page, .course_page{
+  position: relative;
+}
+.intro{
+  background: url("../helpers/me.png") no-repeat;
+  background-size: 55% ; 
+  background-position: 13rem 60px;
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .container{
+    padding: 0 1rem;
+  }
+  .block{
+    padding:5rem 1rem;
+  }
+  .intro{
+    background:none;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .container{
+    padding: 0 3rem;
+  }
+  .block{
+    padding:4rem 3rem;
+  }
+  .intro{
+    background-size: 60% ; 
+    background-position:bottom right 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container{
+    padding: 0 5rem;
+  }
+  .block{
+    padding:5rem 5rem;
+  }
+  .intro{
+    background-size: contain ; 
+    background-position:bottom -50px right 60%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container{
+    padding: 0 5rem;
+  }
+  .block{
+    padding:7rem 5rem;
+  }
+  .intro{
+    background-size: contain ; 
+    background-position:bottom -80px right 60%;
+  }
+}

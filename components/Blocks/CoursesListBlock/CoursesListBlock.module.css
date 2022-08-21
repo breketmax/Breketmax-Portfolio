@@ -1,0 +1,115 @@
+.courses_list_item{
+  position: relative;
+}
+.courses_list_item_content{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: var(--light-blue);
+  padding: 20px 25px;
+  position: relative;
+  cursor: pointer;
+  gap: 20px;
+  transition: 0.7s ease;
+}
+.courses_list_item p{
+  margin-top: 5px;
+}
+.starline{
+  display: grid;
+  grid-template-columns: repeat(5,22px);
+  gap: 5px;
+  margin-top: 20px;
+}
+.courses_list_block{
+  display: grid;
+  row-gap: 30px;
+}
+.details{
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;margin: auto;
+  opacity: 0;
+  border: 3px solid var(--white);
+  width: 100%;
+  height: 85%;
+  text-align: center;
+
+  transition: 0.7s ease;
+  display: grid;
+  align-content: center;
+  gap: 30px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.details h2{
+  margin-top: 200px;
+  transition: 0.3s ease;
+}
+.details svg{
+  fill: var(--white);
+  margin-top: 200px;
+  transition: 0.4s ease;
+}
+.courses_list_item:hover .details{
+  opacity: 1;
+}
+.courses_list_item:hover .details h2{
+  margin-top: 0;
+}
+.courses_list_item:hover .details svg{
+  margin-top: 5px;
+}
+.courses_list_item:hover .courses_list_item_content{
+  transform: scale(1.05);
+  filter: blur(5px);
+}
+.courses_list_item_content::before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);  
+  z-index: 1;
+  
+}
+.courses_list_item:hover .courses_list_item_content::before{
+  display: block;
+}
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .courses_list_item_content{
+    grid-template-columns: auto ;
+    grid-template-rows: 180px auto;
+    padding: 30px 20px;
+  }
+  .courses_list_block{
+    row-gap: 40px;
+  }
+  .details{
+    width: 95%;
+    height: 95%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .details{
+    gap:20px
+  }
+  .details svg{
+    width: 17px;
+  }
+  .starline{
+    margin-top: 5px;
+    gap:2px
+  }
+  .starline svg{
+    width: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 1024px) and (max-width: 1439px) {}

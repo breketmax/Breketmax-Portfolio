@@ -1,0 +1,95 @@
+.introduction_block_content{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5px;
+
+}
+.introduction_description{
+  display: grid;
+  grid-auto-flow: row;
+  gap: 40px;
+}
+.me{
+  display: grid;
+  position: relative;
+
+}
+
+.me_img{
+  position: absolute;
+  z-index: 0;
+}
+.me h1::after{
+  content:"";
+  width: 110px;
+  height: 10px;
+  background-color: var(--primary);
+  display: block;
+  position: relative;
+  bottom:-50px;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .introduction_block{
+    padding: 0;
+  }
+  .me{
+    padding: 0 1rem;
+    min-height: 350px;
+    align-items: center;
+    background: url("../../../helpers/me.png") no-repeat,var(--light-blue) ;
+    background-size: contain;
+    background-position: bottom -40px right;
+  }
+  .introduction_block_content{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;  
+    row-gap: 5rem;
+  }  
+  .me h1::after{
+    width: 50px;
+    height: 5px;
+    bottom:-10px;
+  }
+  .introduction_description{
+    padding: 0 1rem 5rem 1rem;
+    gap: 30px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .introduction_description{
+    gap: 20px;
+  }
+  .me{
+    align-items: center
+  }
+  .me h1::after{
+    width: 80px;
+    height: 5px;
+    background-color: var(--primary);
+    display: block;
+    position: relative;
+    bottom:-10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .introduction_description{
+    gap: 20px;
+  }
+  .me{
+    align-items: center
+  }
+  .me h1::after{
+    width: 80px;
+    height: 5px;
+    background-color: var(--primary);
+    display: block;
+    position: relative;
+    bottom:-10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .me{
+    align-items: center
+  }
+}

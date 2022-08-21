@@ -4,21 +4,31 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build ",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stylelint": "stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
+    "framer-motion": "^7.1.0",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "classnames": "^2.3.1",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^8.0.0",
+    "stylelint-order": "^5.0.0",
     "typescript": "4.7.4"
   }
 }
