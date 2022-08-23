@@ -36,7 +36,7 @@ export const API = {
       id:4,
       time:"21 августа",
       title:"21099 или же просто девятка",
-      text:"Э, че за лев этот тигр. <br/><br/> Я не знаю машин лучше чем ВАЗ, но больше всего я люблю серию 21099 особенно в зеленом цвете посмотрите какая она сочная. <img src=\"https://kolesa-uploads.ru/-/20a5deff-dbac-410d-9c0f-69925d301a88/samara0.jpg\" />"
+      text:"Э, че за лев этот тигр. <br/><br/> Я не знаю машин лучше чем ВАЗ, но больше всего я люблю серию 21099 особенно в зеленом цвете посмотрите какая она сочная. <img src=\"https://sun9-42.userapi.com/impg/CHhUTiBULtbJnVuEM9r_0o6k4syaTPocvgvy9A/dD6HG4VhrNs.jpg?size=810x1080&quality=95&sign=74e6b9c524eaaa170261ceb867d9e068&type=album\" />"
     }],
     reviews:[
       {img:Kate,
