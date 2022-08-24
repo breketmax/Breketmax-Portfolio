@@ -30,6 +30,7 @@
 
 
 @media (min-width: 320px) and (max-width: 479px) {
+
   .about_me_block_content{
     grid-template-columns: auto;
     grid-template-rows: auto auto;

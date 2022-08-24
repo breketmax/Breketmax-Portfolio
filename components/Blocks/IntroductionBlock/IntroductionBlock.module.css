@@ -31,7 +31,7 @@
 
 @media (min-width: 320px) and (max-width: 479px) {
   .introduction_block{
-    padding: 0;
+    padding: 0 !important;
   }
   .me{
     padding: 0 1rem;
