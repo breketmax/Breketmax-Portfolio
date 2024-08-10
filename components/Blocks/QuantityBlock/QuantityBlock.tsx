@@ -6,8 +6,8 @@ import { QuantityCard } from "../../QuantityCard/QuantityCard";
 export const QuantityBlock = () => {
   return (
     <div className={cn(styles.quantity_block, styles1.container)}>
-        <QuantityCard icon="work">Люблю работать</QuantityCard>
-        <QuantityCard icon="honest">Слишком честный</QuantityCard>
+        <QuantityCard icon="work">Люблю свое дело</QuantityCard>
+        <QuantityCard icon="honest">Ответственный за настроение</QuantityCard>
         <QuantityCard icon="education">Быстро обучаюсь</QuantityCard>
       </div>
   );

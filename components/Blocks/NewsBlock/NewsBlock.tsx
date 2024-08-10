@@ -14,11 +14,10 @@ export const NewsBlock = (news:NewsProps) =>{
   };
   return(
     <div className={cn(styles.news_block,styles1.block)}>
-      
       <div className={styles.news_block_content}>
         <Typography tag="h2">{news_item.title}</Typography>
         <div className={styles.news_text} dangerouslySetInnerHTML={{__html:news_item.text}} />
       </div>
     </div>
-  );  
+  );
 }

@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import styles1 from "../../../pages/main.module.css";
 import cn from "classnames";
 
-
-
 export const IntroductionBlock = ():JSX.Element => {
   return (
     <motion.div className={cn(styles.introduction_block, styles1.block)}  initial={{ opacity: 0,x:10,y:0 }} whileInView={{ opacity: 1,x:0,y:0 }} transition={{duration:0.5}} viewport={{ once: true }}>
@@ -17,9 +15,8 @@ export const IntroductionBlock = ():JSX.Element => {
         <div className={styles.introduction_description}>
           <Typography tag="title">Введение</Typography>
           <Typography tag="h2">Frontend разработчик родом из Сибири.</Typography>
-          <Typography tag="p" size="m">Да-да, его и впрямь зовут Максим и он действительно разрабатывает на React.</Typography>
+          <Typography tag="p" size="m">Да-да, его и впрямь зовут Максим и он действительно на работе красит кнопки и двигает элементы на 2 пикселя вправо.</Typography>
           <ReLink href="/history">Моя история</ReLink>
-
         </div>
       </div>
     </motion.div>
