@@ -3,10 +3,10 @@
 
 .link{
   font-weight: 700;
-font-size: 32px;
-color:var(--primary);
-margin: 0;
-display: grid;
+  font-size: 32px;
+  color:var(--primary);
+  margin: 0;
+  display: grid;
   grid-template-columns: auto 1fr;
   gap: 25px;
   grid-template-rows: 32px;
@@ -16,7 +16,7 @@ display: grid;
 .linkBlock svg{
   margin-top: 5px; transition: 0.5s;
 
-} 
+}
 .linkBlock:hover a{
   color:white;
 
@@ -53,7 +53,7 @@ display: grid;
     gap: 15px;
     word-break: break-all;
     align-items: center
-    
+
   }
   .linkBlock svg{
     width: 15px;
