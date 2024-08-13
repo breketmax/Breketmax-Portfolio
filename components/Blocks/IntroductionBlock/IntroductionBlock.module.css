@@ -1,3 +1,4 @@
+
 .introduction_block_content{
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -43,9 +44,9 @@
   }
   .introduction_block_content{
     grid-template-columns: auto;
-    grid-template-rows: auto auto;  
+    grid-template-rows: auto auto;
     row-gap: 5rem;
-  }  
+  }
   .me h1::after{
     width: 50px;
     height: 5px;
@@ -91,5 +92,11 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
     .me{
     align-items: center
+  }
+}
+
+@media (min-width: 1919px)  {
+  .introduction_block{
+    padding: 13rem 13rem !important;
   }
 }

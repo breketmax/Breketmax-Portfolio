@@ -17,7 +17,7 @@ export const Footer = () => {
         <div className={styles.link_block}>
         <motion.a  initial={{ opacity: 0,x:0,y:10 }} whileInView={{ opacity: 1,x:0,y:0 }} transition={{duration:0.1}} viewport={{ once: true }} href="https://t.me/breketmax" target="_blank"><TelegramIcon/></motion.a>
         <motion.a  initial={{ opacity: 0,x:0,y:10 }} whileInView={{ opacity: 1,x:0,y:0 }} transition={{duration:0.3}} viewport={{ once: true }} href="https://vk.com/breketmax" target="_blank"><VkIcon/></motion.a>
-        <motion.a  initial={{ opacity: 0,x:0,y:10 }} whileInView={{ opacity: 1,x:0,y:0 }} transition={{duration:0.5}} viewport={{ once: true }} href="mailto:maxim_01032002@mail.ru"><MailIcon/></motion.a>
+        <motion.a  initial={{ opacity: 0,x:0,y:10 }} whileInView={{ opacity: 1,x:0,y:0 }} transition={{duration:0.5}} viewport={{ once: true }} href="mailto:breketmax@mail.ru"><MailIcon/></motion.a>
         </div>
     </div>
   );

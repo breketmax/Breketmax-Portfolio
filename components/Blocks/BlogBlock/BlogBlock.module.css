@@ -10,16 +10,17 @@
   margin-top: 40px;
 }
 .control_panel{
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 75px 75px 75px 75px; 
-  grid-auto-flow: row;
-  grid-template-rows: 10px;
+  display: flex;
+  gap: 20px 12px;
+  margin-top: 16px;
+  flex-wrap: wrap
 }
 .control_panel button{
   border:none;
   cursor: pointer;
   background-color: var(--black);
+  width: 75px;
+  height: 10px;
 }
 button.active {
   background-color: var(--primary) ;
@@ -89,7 +90,7 @@ border-bottom: 1px solid var(--black);
   }
   .control_panel{
     margin-top: 20px;
-    grid-template-columns: repeat(4,50px); 
+    grid-template-columns: repeat(4,50px);
 
   }
 
@@ -108,7 +109,7 @@ border-bottom: 1px solid var(--black);
   }
   .control_panel{
     grid-template-rows: 7px;
-    grid-template-columns: repeat(4,60px); 
+    grid-template-columns: repeat(4,60px);
     bottom: 10px;
   }
 
@@ -133,8 +134,8 @@ border-bottom: 1px solid var(--black);
     width: 15px;
   }
   .control_panel{
-    
-    grid-template-columns: repeat(4,70px); 
+
+    grid-template-columns: repeat(4,70px);
     bottom: 60px;
   }
   .review h4{

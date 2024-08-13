@@ -38,7 +38,7 @@ export const PortfolioBlock = ({portfolioRef}:PortfolioProps) => {
       <div className={styles.apps}>
         <div className={styles.column_1}>
           <div className={styles.apps_text}>
-            <Typography tag="h2">Приложения созданные мною.</Typography>
+            <Typography tag="h2">Приложения созданные мною</Typography>
             <ReLink href="https://github.com/breketmax" >Github</ReLink>
           </div>
           <motion.div className={styles.app_card}  initial={{ opacity: 0,x:-30,y:0 }} whileInView={{ opacity: 1,x:0,y:0 }} transition={{duration:0.2}} viewport={{ once: true }}>
